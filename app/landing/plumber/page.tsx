@@ -74,13 +74,13 @@ export default function PlumberLandingPage() {
 
                                 <div className="mt-8 flex flex-col sm:flex-row gap-4">
                                     <a href="tel:555-123-4567">
-                                        <Button size="lg" className="bg-white text-plumber-primary hover:bg-blue-50 w-full sm:w-auto">
+                                        <Button size="lg" className="bg-white text-blue-700 hover:bg-blue-50 font-semibold w-full sm:w-auto">
                                             <Phone className="mr-2 h-5 w-5" />
                                             (555) 123-4567
                                         </Button>
                                     </a>
                                     <a href="#contact">
-                                        <Button size="lg" variant="outline" className="border-white text-white hover:bg-white/10 w-full sm:w-auto">
+                                        <Button size="lg" variant="outline" className="border-2 border-white text-white hover:bg-white hover:text-blue-700 font-semibold w-full sm:w-auto">
                                             Get Free Quote
                                         </Button>
                                     </a>

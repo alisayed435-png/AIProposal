@@ -130,7 +130,7 @@ export function MarketingHeader() {
                             className="fixed inset-y-0 right-0 z-50 w-full max-w-sm lg:hidden"
                         >
                             {/* Glassmorphic panel */}
-                            <div className="h-full bg-white/90 backdrop-blur-xl shadow-2xl">
+                            <div className="h-full bg-white shadow-2xl">
                                 {/* Header */}
                                 <div className="flex items-center justify-between px-6 h-16 border-b border-neutral-200/50">
                                     <Link
