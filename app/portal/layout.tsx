@@ -4,7 +4,7 @@ import { useState } from "react";
 import Link from "next/link";
 import { usePathname, useRouter } from "next/navigation";
 import {
-    Sparkles,
+    Zap,
     LayoutDashboard,
     Users,
     Calendar,
@@ -54,7 +54,7 @@ export default function PortalLayout({
             {demoMode && (
                 <div className="bg-amber-50 border-b border-amber-200 z-50 relative">
                     <div className="px-4 py-2 text-center text-sm text-amber-800">
-                        <Sparkles className="inline-block h-4 w-4 mr-1" />
+                        <Zap className="inline-block h-4 w-4 mr-1" />
                         <strong>Demo Mode:</strong> Running with sample data. Connect Supabase for full functionality.
                     </div>
                 </div>
@@ -78,13 +78,16 @@ export default function PortalLayout({
             >
                 {/* Logo */}
                 <div className="flex h-16 items-center justify-between px-6 border-b border-neutral-200">
-                    <Link href="/portal" className="flex items-center gap-2">
-                        <div className="flex h-8 w-8 items-center justify-center rounded-lg bg-gradient-to-br from-brand-600 to-accent-600">
-                            <Sparkles className="h-4 w-4 text-white" />
+                    <Link href="/portal" className="flex items-center gap-2.5">
+                        <div className="relative flex h-9 w-9 items-center justify-center">
+                            <div className="absolute inset-0 rounded-xl bg-gradient-to-br from-brand-500 to-accent-500" />
+                            <div className="absolute inset-[1px] rounded-[9px] bg-gradient-to-br from-white/20 to-transparent" />
+                            <Zap className="relative h-4 w-4 text-white" />
                         </div>
-                        <span className="font-semibold text-neutral-900">
-                            SmallBiz<span className="text-brand-600">Growth</span>
-                        </span>
+                        <div className="flex flex-col">
+                            <span className="text-base font-semibold text-neutral-900 leading-tight">GrowthOS</span>
+                            <span className="text-[9px] font-medium text-neutral-500 uppercase tracking-wider">For Business</span>
+                        </div>
                     </Link>
                     <button
                         className="lg:hidden p-1 text-neutral-400 hover:text-neutral-600"
